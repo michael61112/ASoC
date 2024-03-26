@@ -1,0 +1,1 @@
+/RAID2/cad/mentor/Catapult/2023.2/Mgc_home/pkgs/cds_cpc/rls/bin/cat2slec -cat2slec_work_dir /RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/./CDesignChecker -workdir .. -cpc -symbolic_memory_threshold_size 256

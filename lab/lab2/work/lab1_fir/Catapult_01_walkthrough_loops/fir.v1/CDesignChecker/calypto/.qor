@@ -1,0 +1,1 @@
+hostname=ee21; cpu=6; optimalcpu=6; realtime=12; leak=79; mem=482; verification_mode=c_property_checks; systemc=1; verilog=1; bd_cpu=5; bd_mem=346; PROOF_LEVEL=0; CPC_marker=1; MAPS_INTERMEDIATE_marker=1; PENMgrNew_marker=1; RUN_PROGRAM_marker=2; SBV_marker=1; SPEC_REDUX_marker=1; TBGEN_FLAT_marker=1; VERIFY_marker=1; VerifyEquivalenceOld_marker=1

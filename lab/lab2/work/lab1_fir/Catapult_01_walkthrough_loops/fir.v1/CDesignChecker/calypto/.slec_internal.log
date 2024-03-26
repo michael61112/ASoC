@@ -1,0 +1,536 @@
++-----------------------------------------------------------------------+
+|                                                                       |
+|                                                                       |
+|                          SIEMENS EDA(tm)                              |
+|                                                                       |
+|                         SLEC(tm) Software                             |
+|                                                                       |
+|                                                                       |
+| This program contains confidential, trade secret information which    |
+| is property of Siemens. Any reproduction, use or disclosure of        |
+| this program, including any attempt to obtain a human-readable        |
+| version of this program, without the express, prior written consent   |
+| of Siemens is strictly prohibited.                                    |
+|                                                                       |
+|             Copyright: Unpublished work. (c) Siemens 2023             |
+|                         All rights reserved.                          |
+|                                                                       |
+| Siemens acknowledges trademarks or registered trademarks of other     |
+| organizations for their respective products and services.             |
+|                                                                       |
+| SLEC-2023.2/1056505  (Jul 18 2023)  linux64  S2307180103              |
+|                                                                       |
+|                                                                       |
+| 64-bit mode                                                           |
+| CentOS Linux release 7.9.2009 (Core) x86_64                           |
+| AMD EPYC 7763 64-Core Processor x 256                                 |
+| 1056530580 kB                                                         |
+| ee21                                         Tue Mar 26 16:54:36 2024 |
+|                                                                       |
++-----------------------------------------------------------------------+
+Command-line: /RAID2/cad/mentor/Catapult/2023.2/Mgc_home/pkgs/cds_cpc/rls/platform/linux64/bin/slec -connect 1544 -workdir /RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/./CDesignChecker/calypto
+
+
+Tue Mar 26 16:54:36 CST 2024
+Linux ee21 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 15:41:52 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+LSB Version:	:core-4.1-amd64:core-4.1-noarch:cxx-4.1-amd64:cxx-4.1-noarch:desktop-4.1-amd64:desktop-4.1-noarch:languages-4.1-amd64:languages-4.1-noarch:printing-4.1-amd64:printing-4.1-noarch:trialuse-4.1-amd64:trialuse-4.1-noarch
+Distributor ID:	CentOS
+Description:	CentOS Linux release 7.9.2009 (Core)
+Release:	7.9.2009
+Codename:	Core
+
+top - 16:54:37 up 26 days, 15:21, 45 users,  load average: 32.90, 33.05, 33.23
+Tasks: 2800 total,   7 running, 2585 sleeping, 199 stopped,   9 zombie
+%Cpu(s):  5.7 us,  7.5 sy,  0.0 ni, 86.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem : 10565305+total, 64271449+free, 18772563+used, 22609043+buff/cache
+KiB Swap:  4194300 total,  3343000 free,   851300 used. 86518035+avail Mem 
+
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+254186 dcs082    20   0  976756 233988   8192 S 747.6  0.0  45151:03 Novas
+ 17715 dcs133    20   0 1026856 312032   8200 S 595.2  0.0  40954:36 Novas
+ 73734 dcs077    20   0  885268 170968   8240 S 581.0  0.0 102219:40 Novas
+182953 dcs082    20   0  919312 232272   8276 S 566.7  0.0 102674:46 Novas
+ 82116 iclab035  20   0  880980 403372  32028 R 190.5  0.0  46496:56 simv
+102467 iclab027  20   0  436032 134264  30620 R  95.2  0.0  26769:42 simv
+121362 mlchip1+  20   0   40916  20900   2464 R  95.2  0.0  16:29.96 run
+135378 mlchip1+  20   0 6179532   5.8g   2476 R  95.2  0.6   9:34.89 run
+145471 mlchip0+  20   0 2775212   2.6g   2572 R  95.2  0.3   3:19.11 run
+150449 iclab061  20   0  534840 255436  71276 R  95.2  0.0   0:06.92 simv
+150657 asoc020   20   0   65504   4936   1576 R  23.8  0.0   0:00.09 top
+ 66239 dcs041    20   0  935136 365608  95312 S   4.8  0.0  15:26.05 Novas
+ 77795 iclab086  20   0 1579520 273140  34792 S   4.8  0.0  39:51.92 Novas
+122140 root      20   0       0      0      0 S   4.8  0.0   0:00.59 kworker/1+
+246020 iclab061  20   0 1026308 306476  79564 S   4.8  0.0   2:46.57 Novas
+     1 root      20   0  201032   4764   1724 S   0.0  0.0  14:45.96 systemd
+     2 root      20   0       0      0      0 S   0.0  0.0   0:18.10 kthreadd
+
+Filesystem        Size  Used Avail Use% Mounted on
+eehpcraid:/RAID2  140T   13T  127T  10% /RAID2
+
+Soft limits
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 4126203
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+
+Hard limits
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 4126203
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4126203
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+
+ARCH=linux64
+CALIBRE_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
+CALYPTO_ARGV0=/RAID2/cad/mentor/Catapult/2023.2/Mgc_home/pkgs/cds_cpc/rls/bin/slec
+CALYPTO_LICENSE_LOG=12476@ee21:150584,1711443276
+CDPL_HOME=/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/cdpl
+CDSHOME=/usr/cad/cadence/IC/IC_06.18.250
+CDS_AUTO_64BIT=ALL
+CDS_LOAD_ENV=CSF
+CDS_Netlisting_Mode=Analog
+CMIARCH=RH_64
+DISPLAY=localhost:52.0
+ENSCRIPT_LIBRARY=/usr/share/enscript
+FINESIM_64=1
+FINEWAVE_64=1
+GLIBCPP_FORCE_NEW=1
+GLIBCXX_FORCE_NEW=1
+GROUP=asoc
+HOME=/RAID2/COURSE/asoc/asoc020
+HOST=ee21
+HOSTNAME=ee21
+HOSTTYPE=x86_64-linux
+HSP_GCC=/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/GNU/linux64/gcc/bin/gcc -m64 
+HSP_GCC_VERSION=7.3.0
+HSP_HOME=/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice
+HSP_SIGMA_AMP=/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/python/Omega/Omega
+ICV_HOME_DIR=/usr/cad/synopsys/icvalidator/2021.06-sp2/
+JGOLD_dir=/RAID2/eda/jasper_2021.03/
+LD_LIBRARY_PATH=/RAID2/cad/mentor/Catapult/2023.2/Mgc_home/lib:/RAID2/cad/mentor/Catapult/2023.2/Mgc_home/shared/lib::/RAID2/cad/synopsys/verdi/cur/share/PLI/IUS/linux64/boot:/RAID2/cad/synopsys/verdi/cur/share/PLI/lib/linux64
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LM_LICENSE_FILE=1717@lshc:26585@lshc:5280@lshc:5280@lstn:5280@lstc:26585@lstn:26585@lstc:1717@lstc:1717@lstn:
+LOGNAME=asoc020
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+Laker_TCL_L3=1
+Laker_TCL_ToolBox=1
+MACHTYPE=x86_64
+MAIL=/var/spool/mail/asoc020
+MANPATH=/usr/cad/synopsys/siliconsmart/2022.12/ncx/man:/usr/cad/synopsys/synthesis/2022.03/doc/syn/man:/usr/cad/synopsys/vcs/2022.06/doc/man:/usr/cad/synopsys/lc/2022.03/doc/lc/man:/usr/cad/synopsys/star-rcxt/2019.12-sp5-3//starrc/man
+MGC_ENV_ORIG_LD_LIBRARY_PATH=/RAID2/cad/synopsys/verdi/cur/share/PLI/IUS/linux64/boot:/RAID2/cad/synopsys/verdi/cur/share/PLI/lib/linux64
+MGC_ENV_ORIG_MGC_HOME=/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18/
+MGC_ENV_ORIG_PATH=/usr/cad/mentor/Catapult/cur//Mgc_home/bin:/usr/cad/mentor/Catapult/cur//Mgc_home/bin:/RAID2/cad/MATLAB/bin/:/opt/btop/bin/:/RAID2/cad/Xilinx/Vivado/2020.2/bin:/RAID2/eda/jasper_2021.03//bin:/usr/cad/synopsys/cosmos_scope/cur/ai_bin:/usr/cad/synopsys/spyglass/2023.03//SPYGLASS_HOME/bin:/usr/cad/synopsys/icc/2022.03/amd64/syn/bin:/usr/cad/synopsys/primetime/2019.03-sp5-1//amd64/syn/bin:/usr/cad/synopsys/fc/2022.03/bin:/usr/cad/synopsys/lc/2022.03/bin:/usr/cad/synopsys/vc_formal/cur/bin:/usr/cad/synopsys/vcs/2022.06/amd64/bin:/usr/cad/synopsys/verdi/2019.06//bin:/usr/cad/synopsys/synthesis/2022.03/amd64/syn/bin:/cad/synopsys/lc/cur/bin:/usr/cad/cadence/SPECTRE/SPECTRE_19.10.322//tools/bin/64bit:/usr/cad/cadence/SPECTRE/SPECTRE_19.10.322//tools/dfII/bin/64bit:/usr/cad/cadence/SPECTRE/SPECTRE_19.10.322//tools/bin:/usr/cad/cadence/SPECTRE/SPECTRE_19.10.322//tools/dfII/bin:/usr/cad/cadence/SSV/SSV_21.12.000//tools/bin/64bit:/usr/cad/cadence/SSV/SSV_21.12.000//tools/bin:/usr/cad/cadence/QUANTUS/QUANTUS_21.11.000//tools/bin/64bit:/usr/cad/cadence/QUANTUS/QUANTUS_21.11.000//tools/bin:/usr/cad/cadence/PEGASUS/PEGASUS_21.20.000//tools/bin/64bit:/usr/cad/cadence/PEGASUS/PEGASUS_21.20.000//tools/bin:/usr/cad/cadence/JASPER/jasper_2023.09p001/bin:/usr/cad/cadence/INNOVUS/INNOVUS_20.15.000/tools/bin/64bit:/usr/cad/cadence/INNOVUS/INNOVUS_20.15.000/tools/bin:/usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/bin/64bit:/usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/bin:/usr/cad/cadence/XCELIUM/XCELIUM_22.03.003/tools/bin/64bit:/usr/cad/cadence/XCELIUM/XCELIUM_22.03.003/tools/bin:/usr/cad/cadence/GENUS/GENUS_20.10.000/tools/bin/64bit:/usr/cad/cadence/GENUS/GENUS_20.10.000/tools/bin:/usr/cad/mentor/Tessent/cur/bin:/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18//bin:/usr/cad/synopsys/laker_oa/2021.06//bin:/usr/cad/synopsys/customexplorer/2022.06//bin:/usr/cad/synopsys/customcompiler/2020.12-sp1-2//bin:/usr/cad/synopsys/customcompiler/2020.12-sp1-2//primewave/bin:/usr/cad/synopsys/siliconsmart/2022.12/bin:/usr/cad/synopsys/xa/2022.06//bin:/usr/cad/synopsys/finesim/2022.06//bin:/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/bin:/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/GNU/linux64/gcc/bin:/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64:/usr/bin:/usr/ucb/bin:/usr/cad/synopsys/hspice/2020.03-sp2-2//hspice/bin:/usr/cad/cadence/LIBERATE/LIBREATE_21.72.187/tools.lnx86/bin/64bit:/usr/cad/cadence/LIBERATE/LIBREATE_21.72.187/tools.lnx86/bin:/usr/cad/cadence/IC/IC_06.18.250/tools/bin:/usr/cad/cadence/IC/IC_06.18.250/tools/dracula/bin:/usr/cad/cadence/IC/IC_06.18.250/tools/dfII/bin:/usr/cad/cadence/IC/IC_06.18.250/tools/bin/64bit:/usr/cad/cadence/IC/IC_06.18.250/tools/dracula/bin/64bit:/usr/cad/cadence/IC/IC_06.18.250/tools/dfII/bin/64bit:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/sbin/:/usr/sbin/:/RAID2/Tool/bin/
+MGC_EXENAME=catapult
+MGC_HOME=/RAID2/cad/mentor/Catapult/2023.2/Mgc_home
+MGC_LOCATION_MAP=NO_MAP
+MGC_TMPDIR=/tmp
+MGLS_LICENSE_FILE=1717@lshc
+OSTYPE=linux
+PATH=/RAID2/cad/mentor/Catapult/2023.2/Mgc_home/pkgs/cds_cpc/rls/platform/linux64/bin:/RAID2/cad/synopsys/verdi/2019.06/bin:/RAID2/cad/mentor/Catapult/2023.2/Mgc_home/bin:/RAID2/cad/mentor/Catapult/2023.2/Mgc_home/lib:/RAID2/cad/mentor/Catapult/2023.2/Mgc_home/pkgs/sif/.lib:/usr/cad/mentor/Catapult/cur//Mgc_home/bin:/usr/cad/mentor/Catapult/cur//Mgc_home/bin:/RAID2/cad/MATLAB/bin/:/opt/btop/bin/:/RAID2/cad/Xilinx/Vivado/2020.2/bin:/RAID2/eda/jasper_2021.03//bin:/usr/cad/synopsys/cosmos_scope/cur/ai_bin:/usr/cad/synopsys/spyglass/2023.03//SPYGLASS_HOME/bin:/usr/cad/synopsys/icc/2022.03/amd64/syn/bin:/usr/cad/synopsys/primetime/2019.03-sp5-1//amd64/syn/bin:/usr/cad/synopsys/fc/2022.03/bin:/usr/cad/synopsys/lc/2022.03/bin:/usr/cad/synopsys/vc_formal/cur/bin:/usr/cad/synopsys/vcs/2022.06/amd64/bin:/usr/cad/synopsys/verdi/2019.06//bin:/usr/cad/synopsys/synthesis/2022.03/amd64/syn/bin:/cad/synopsys/lc/cur/bin:/usr/cad/cadence/SPECTRE/SPECTRE_19.10.322//tools/bin/64bit:/usr/cad/cadence/SPECTRE/SPECTRE_19.10.322//tools/dfII/bin/64bit:/usr/cad/cadence/SPECTRE/SPECTRE_19.10.322//tools/bin:/usr/cad/cadence/SPECTRE/SPECTRE_19.10.322//tools/dfII/bin:/usr/cad/cadence/SSV/SSV_21.12.000//tools/bin/64bit:/usr/cad/cadence/SSV/SSV_21.12.000//tools/bin:/usr/cad/cadence/QUANTUS/QUANTUS_21.11.000//tools/bin/64bit:/usr/cad/cadence/QUANTUS/QUANTUS_21.11.000//tools/bin:/usr/cad/cadence/PEGASUS/PEGASUS_21.20.000//tools/bin/64bit:/usr/cad/cadence/PEGASUS/PEGASUS_21.20.000//tools/bin:/usr/cad/cadence/JASPER/jasper_2023.09p001/bin:/usr/cad/cadence/INNOVUS/INNOVUS_20.15.000/tools/bin/64bit:/usr/cad/cadence/INNOVUS/INNOVUS_20.15.000/tools/bin:/usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/bin/64bit:/usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/bin:/usr/cad/cadence/XCELIUM/XCELIUM_22.03.003/tools/bin/64bit:/usr/cad/cadence/XCELIUM/XCELIUM_22.03.003/tools/bin:/usr/cad/cadence/GENUS/GENUS_20.10.000/tools/bin/64bit:/usr/cad/cadence/GENUS/GENUS_20.10.000/tools/bin:/usr/cad/mentor/Tessent/cur/bin:/usr/cad/mentor/calibre/aoi_cal_2019.2_26.18//bin:/usr/cad/synopsys/laker_oa/2021.06//bin:/usr/cad/synopsys/customexplorer/2022.06//bin:/usr/cad/synopsys/customcompiler/2020.12-sp1-2//bin:/usr/cad/synopsys/customcompiler/2020.12-sp1-2//primewave/bin:/usr/cad/synopsys/siliconsmart/2022.12/bin:/usr/cad/synopsys/xa/2022.06//bin:/usr/cad/synopsys/finesim/2022.06//bin:/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/bin:/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/GNU/linux64/gcc/bin:/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64:/usr/bin:/usr/ucb/bin:/usr/cad/synopsys/hspice/2020.03-sp2-2//hspice/bin:/usr/cad/cadence/LIBERATE/LIBREATE_21.72.187/tools.lnx86/bin/64bit:/usr/cad/cadence/LIBERATE/LIBREATE_21.72.187/tools.lnx86/bin:/usr/cad/cadence/IC/IC_06.18.250/tools/bin:/usr/cad/cadence/IC/IC_06.18.250/tools/dracula/bin:/usr/cad/cadence/IC/IC_06.18.250/tools/dfII/bin:/usr/cad/cadence/IC/IC_06.18.250/tools/bin/64bit:/usr/cad/cadence/IC/IC_06.18.250/tools/dracula/bin/64bit:/usr/cad/cadence/IC/IC_06.18.250/tools/dfII/bin/64bit:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/sbin/:/usr/sbin/:/RAID2/Tool/bin/
+POWERVIEW_64=1
+PWD=/RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+QTLIB=/usr/lib64/qt-3.3/lib
+QT_GRAPHICSSYSTEM_CHECKED=1
+REMOTEHOST=140.113.0.229
+SHELL=/bin/tcsh
+SHLIB_PATH=/usr/cad/synopsys/verdi/2019.06//etc/lib/libstdc++/LINUX64/:/usr/cad/synopsys/verdi/2019.06//share/PLI/lib/LINUX64/:/usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/LINUX64/:
+SHLVL=3
+SNPS_64=1
+SNPS_PLATFORM=linux64
+SPAPI_AHDL_INCLUDE=/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/include
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_CLIENT=140.113.0.229 56327 415
+SSH_CONNECTION=140.113.0.229 56327 140.113.201.21 415
+SSH_TTY=/dev/pts/69
+SYNOPSYS=/usr/cad/synopsys/synthesis/cur/
+SYNOPSYS_LC_ROOT=/cad/synopsys/lc/cur
+SYNOPSYS_NCX_ROOT=/usr/cad/synopsys/star-rcxt/2019.12-sp5-3/
+SYN_MAN_DIR=/usr/cad/synopsys/star-rcxt/2019.12-sp5-3//starrc/man
+SYSTEMC_HOME=/RAID2/cad/mentor/Catapult/2023.2/Mgc_home/pkgs/cds_cpc/rls/tools/systemc2.2/
+TCL_PRINTER_CONFFILE=/dev/null
+TERM=xterm
+TK_LIBRARY=/RAID2/cad/mentor/Catapult/2023.2/Mgc_home/lib/tk8.5
+TMIARCH=RH_64
+USER=asoc020
+VCO=aol
+VCS_CC=gcc
+VCS_HOME=/usr/cad/synopsys/vcs/2022.06
+VC_STATIC_HOME=/usr/cad/synopsys/vc_formal/cur/
+VENDOR=unknown
+VERDI_HOME=/usr/cad/synopsys/verdi/2019.06/
+XDG_RUNTIME_DIR=/run/user/12476
+XDG_SESSION_ID=134953
+XLOCALEDIR=/usr/cad/synopsys/icc2/2021.06-sp5//etc/locale
+_=/usr/bin/printenv
+installdir=/RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice
+mraarch=linux_64
+
+     [APP-RISS]   Reading internal startup script '/RAID2/cad/mentor/Catapult/2023.2/Mgc_home/pkgs/cds_cpc/rls/slec/scripts/slec_utils.tcl'
+     [APP-RSS]    Reading startup script '/RAID2/cad/mentor/Catapult/2023.2/Mgc_home/pkgs/cds_cpc/rls/slecrc'
+slec> cd /RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/./CDesignChecker
+slec> set SLEC_CPC_PROTOCOL 0
+0
+
+slec> set_global message_wrap_at 10000
+10000
+
+slec> global env
+slec> set env(SLEC_FROM_CATAPULT) 1
+1
+
+slec> set env(SLEC_FROM_CATAPULT_IPC) 1
+1
+
+slec> set cat2slec_args {-cat2slec_work_dir /RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/./CDesignChecker -workdir .. -cpc -symbolic_memory_threshold_size 256}
+-cat2slec_work_dir /RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/./CDesignChecker -workdir .. -cpc -symbolic_memory_threshold_size 256
+
+slec> source /RAID2/cad/mentor/Catapult/2023.2/Mgc_home/pkgs/cds_cpc/rls/platform/common/slec/cat2slec.itcl
+     [CTS-CDFN]   cat2slec debug information will be logged in "/RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/./CDesignChecker/cat2slec.debug".
+     [UI-STATS]   SLEC process is using 63 MB, peak 67 MB, and 2 seconds [+63MB, +67MB, +2s] @ Tue Mar 26 16:54:38 2024
+
+     [CTS-SVI]    Detected SLEC Version : SLEC 2023.2/
+     [CTS-CCFN]   The tool command file will be written to "cat2slec.cmd".
+     [CTS-CVI]    Detected Catapult Version : 8.2
+     [CTS-ETN]    Extracting information for the block "fir::run".
+    ######################################################################
+    Generating SystemC and RTL wrappers for the specified design
+    ######################################################################
+     [CTS-SWF]    SPEC Wrapper file(s) is/are : "spec_wrapper.h spec_wrapper.cpp".
+     [CTS-SWTMN]  SPEC Design top module name is now "spec_wrapper".
+     [CTS-PSW]    Printing SPEC Wrapper files.
+     [UI-STATS]   SLEC process is using 68 MB, peak 73 MB, and 2 seconds [+5MB, +6MB, +0s] @ Tue Mar 26 16:54:38 2024
+
+     [CTS-FSSN]   Final SLEC script is generated at: /RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/CDesignChecker/run_design_checker.tcl
+     [CTS-SFCI]   cat2slec is running via IPC from Catapult - not exiting TCL shell.
+slec> set_global message_wrap_at 10000
+10000
+
+slec> set env(SLEC_FROM_CATAPULT) 1
+1
+
+slec> rename exit exitproc
+slec> proc exit {} {}
+slec> set Run_Formal_Part_One 1
+1
+
+slec> set Run_Formal_Part_Two 0
+0
+
+slec> source run_design_checker.tcl
+     [SOL-SCL]    Solver cache location set to 'workdir'.
+# # This file is automatically generated by Catapult each time CDesignChecker is
+# # is launched from Catapult. Any user-applied edits will be overwritten.
+# 
+# set ::env(SLEC_GCC_HOME) /RAID2/cad/mentor/Catapult/2023.2/Mgc_home/pkgs/dcs_gcc/usr
+# # Property checks
+# 
+# # add Verification Mode settings
+# set_verification_mode -c_property_checks 
+config_solver_clustering -enable  -engine StateCheck -max_size 20
+     [APP-SCP]    Setting the currently running product to SLEC CPC.
+set_global -if_unchanged orc_binary_sim                               1
+set_global -if_unchanged print_slec_summary                           0
+set_global -if_unchanged stop_at_first_falsification                  0
+set_global -if_unchanged ctrl_c_unattended_mode                       1
+set_global -if_unchanged generate_testbenches                         0
+set_global -if_unchanged output_problem_time_limit                    1
+set_global -if_unchanged ceg_generate_testbenches_for              spec
+set_global -if_unchanged testbenches_dump_waveforms                   0
+set_global -if_unchanged stop_solvers_after_num_falsifications        0
+set_global -if_unchanged max_num_testbenches                          0
+set_global -if_unchanged _enable_pragma_hls_exclude                   0
+set_global -if_unchanged orc_generate_waveforms_for                spec
+set_global -if_unchanged systemc_version                            2.3
+set_global -if_unchanged sim_max_transactions                       200
+set_global -if_unchanged __skip_collect_redundant_identity_nodes      1
+set_global -if_unchanged soft_runtime_limit                        7200
+set_global -if_unchanged find_invariants                              0
+set_global -if_unchanged sim_based_validation_timeout               900
+set_global -if_unchanged ceg_flat_sysc_tb                             1
+set_global -if_unchanged output_problem_time_limit_factor           4.0
+set_global -if_unchanged reduce_memory_exprs                          1
+set_global -if_unchanged seq_perform_state_checks              only_bec
+set_global -if_unchanged _enable_interim_pass_list                    1
+set_global -if_unchanged ceg_generate_checkers                        0
+set_global -if_unchanged number_of_ll3_iterations                     3
+set_global -if_unchanged enable_hierarchy_synthesis                   1
+     [UI-MID]     Message "CEG-BSCI" is now disabled.
+     [UI-MID]     Message "CEG-SCVER" is now disabled.
+config_trace_files -disable
+# 
+# # Clear all settings
+# config_property_checks -disable -all
+# # Enable rules
+# config_property_checks -enable -abr -severity error 
+# config_property_checks -enable -abw -severity error 
+# config_property_checks -enable -acc -severity warning 
+# config_property_checks -enable -acs -severity warning 
+# config_property_checks -enable -aic -severity warning 
+# config_property_checks -enable -als -severity warning 
+# config_property_checks -enable -aob -severity error 
+# config_property_checks -enable -apt -severity info 
+# config_property_checks -enable -awe -severity warning 
+# config_property_checks -enable -cas -severity error 
+# config_property_checks -enable -cbu -severity warning 
+# config_property_checks -enable -ccc -severity warning 
+# config_property_checks -enable -cgr -severity warning 
+# config_property_checks -enable -cia -severity warning 
+# config_property_checks -enable -cmc -severity info 
+# config_property_checks -enable -cns -severity warning 
+# config_property_checks -enable -cwb -severity warning 
+# config_property_checks -enable -dbz -severity error 
+# config_property_checks -enable -diu -severity warning 
+# config_property_checks -enable -fvi -severity warning 
+# config_property_checks -enable -fxd -severity warning 
+# config_property_checks -enable -ise -severity error 
+# config_property_checks -enable -lrc -severity info 
+# config_property_checks -enable -mdb -severity warning 
+# config_property_checks -enable -mxs -severity info 
+# config_property_checks -enable -nco -severity warning 
+# config_property_checks -enable -osa -severity warning 
+# config_property_checks -enable -ovl -severity error 
+# config_property_checks -enable -pdd -severity warning 
+# config_property_checks -enable -riu -severity warning 
+# config_property_checks -enable -rrt -severity error 
+# config_property_checks -enable -sat -severity warning 
+# config_property_checks -enable -stf -severity info 
+# config_property_checks -enable -sud -severity warning 
+# config_property_checks -enable -umr -severity error 
+# 
+# # Symbolic Memory Control
+# set_global symbolic_memory_threshold_size 256
+# 
+# # verification effort
+# set_verification_effort -medium
+set_global number_of_ll3_iterations 3
+set_global soft_runtime_limit 7200
+set_global output_problem_time_limit 1
+set_global __sol_use_engine_time_limit_for_last_output 0
+set_global sim_max_transactions 200
+set_global sim_based_validation_timeout 900
+set_global output_problem_time_limit_factor 4.0
+# set_global report_undecided_solver_properties 1
+# 
+# 
+### Reading user-provided value '1' from the Tcl variable 'Run_Formal_Part_One'
+### Reading user-provided value '0' from the Tcl variable 'Run_Formal_Part_Two'
+# # CDesignChecker Pre-build-design user options
+     [UI-BDLM]    Please refer to /RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/./CDesignChecker/calypto/build_design.log for a comprehensive list of messages and warnings issued in build_design. These may provide hints for debugging issues (if any) related to performance, potential out of bound accesses etc.
+
+                  (Subsequent repetitions of this message will be suppressed.
+                   Use 'enable_msg UI-BDLM' to show all repetitions.)
+
+     [CPT-RDF]    Reading design files into the 'spec' design library.
+     [CPT-SC21]   SystemC version 2.3 features will be used.
+     [CPT-UGV]    Using GCC 10.3.0 to parse system function interfaces and STL.
+     [CPT-FRD]    Finished reading SystemC files into the 'spec' design library.
+     [CPT-LDF]    Linking the 'spec' design library.
+     [CPT-CETI]   SC_MODULE class "spec_wrapper" identified as top module for C++ elaboration. The class is defined at (/RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/CDesignChecker/spec_wrapper.h:37)
+     [CPT-DCD]    Generating design_checks.db file.
+     [CPT-OLX]    Generating design_checks.xml file.
+     [CPT-OLT]    Generating design check reports.
+     [CPT-FTH]    Found 'spec_wrapper' as the top module of the 'spec' design library.
+slec> set Run_Formal_Part_One 0
+0
+
+slec> set Run_Formal_Part_Two 1
+1
+
+slec> source run_design_checker.tcl
+     [SOL-SCL]    Solver cache location set to 'workdir'.
+### Reading user-provided value '1' from the Tcl variable '_Design_Already_Read'
+### Reading user-provided value '0' from the Tcl variable 'Run_Lint_Only'
+### Reading user-provided value '0' from the Tcl variable 'Run_Formal_Part_One'
+### Reading user-provided value '1' from the Tcl variable 'Run_Formal_Part_Two'
+### Reading user-provided value '0' from the Tcl variable 'Enable_DB_Flow'
+### Reading user-provided value '1' from the Tcl variable 'Induction_Depth'
+     [CPT-STN]    Synthesizing the 'spec' design library.
+     [CDB-STH]    Setting 'spec_wrapper' as the top module of the 'spec' design library.
+     [CPT-FBD]    Finished synthesizing the 'spec' design library.
+     [UI-STATS]   SLEC process is using 77 MB, peak 346 MB, and 9 seconds [-56MB, +0MB, +0s] @ Tue Mar 26 16:54:45 2024
+
+     [CDB-WDF]    Saving the netlist database to 'design.db'.
+<WRN>[CDB-PHNSL]  Port 'spec.rst' was not connected to any downstream logic, or the original logic has been optimized away.
+<WRN>[TDB-PHNF]   Constraint is applied to port 'spec.rst' which has no fanout.
+<WRN>[CDB-PHNSL]  Port 'spec.rst' was not connected to any downstream logic, or the original logic has been optimized away.
+<WRN>[TDB-PHNF]   Constraint is applied to port 'spec.rst' which has no fanout.
+# # CDesignChecker user constraints
+<WRN>[CTS-SVNF]   Could not find variable(s) 'spec.spec_wrapper::input::rdy'. Corresponding flop map(s) are skipped.
+          Near matches: {} 0 
+     [UI-STATS]   SLEC process is using 78 MB, peak 346 MB, and 9 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:45 2024
+
+<WRN>[UI-GWM]     No properties found in the designs to check. Check if appropriate property checking verification mode was used.
+     [CDB-BBWS]   Could not find black box signature for module 'spec.input_ac_channel_read_ln26_bbox_7'.
+                  Please try 'help CDB-BBWS' for more detailed help.
+     [ORC-SPM]    Running full proof verification.
+     [ORC-SPN]    Started netlist transformations on spec and impl designs to make them verification friendly.
+     [CDB-NSEV]   Number of sanitized edge in view "__DESIGN__" is "0".
+     [CDB-NSEV]   Number of sanitized edge in view "__DESIGN__" is "0".
+     [CDB-NSEV]   Number of sanitized edge in view "__DESIGN__" is "0".
+     [CDB-NSEV]   Number of sanitized edge in view "__DESIGN__" is "0".
+     [CDB-NSEV]   Number of sanitized edge in view "__DESIGN__" is "0".
+     [CDB-NSEV]   Number of sanitized edge in view "__DESIGN__" is "0".
+     [CDB-NSEV]   Number of sanitized edge in view "__DESIGN__" is "0".
+     [CDB-NSEV]   Number of sanitized edge in view "__DESIGN__" is "0".
+     [ORC-FPN]    Finished netlist transformations.
+     [UI-STATS]   SLEC process is using 78 MB, peak 346 MB, and 9 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:45 2024
+
+<WRN>[TDB-UBIE]   Unmapped black-box instances exist. Please refer to file '/RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/./CDesignChecker/calypto/bbox.log' for a complete list of unmapped black-box instances.
+                  Please try 'help TDB-UBIE' for more detailed help.
+<WRN>[TDB-UBIP]   Unmapped ports for black-box instances exist. Please refer to file '/RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/./CDesignChecker/calypto/bbox.log' for a complete list of unmapped ports of black-box instances.
+                  Please try 'help TDB-UBIP' for more detailed help.
+     [TA-BBCT]    Bit-blasting the clock tree.
+     [UI-STATS]   SLEC process is using 78 MB, peak 346 MB, and 9 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:45 2024
+
+     [PSS-SDM]    Started mapping the 'spec' and 'impl' designs.
+<WRN>[TDB-PUP]    Unmapped output/blackbox-input ports have been disconnected by logic pruning and will not show up in any SLEC generated waveforms. Please refer to '/RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/./CDesignChecker/calypto/mapping.log' for the list of unmapped outputs. Please use the global setting 'set_global prune_unmapped_logic 0' to get SLEC to dump these ports in waveforms.
+<WRN>[TDB-DRF]    Some flops have been removed by dead/unmapped logic pruning. Please refer to '/RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/./CDesignChecker/calypto/mapping.log' for the list of removed flops.
+     [PSS-FDM]    Finished mapping the 'spec' and 'impl' designs.
+     [UI-STATS]   SLEC process is using 78 MB, peak 346 MB, and 10 seconds [+0MB, +0MB, +1s] @ Tue Mar 26 16:54:46 2024
+
+     [TA-ACDD]    Determining input clock domains.
+     [TA-ADCA]    Setting clock ## Clock : _Ideal_Clk_ (Period : 100, Rising edge : 2, Falling edge : 52) is set on spec.clk on automatically inferred clock port 'spec.clk'.
+     [UI-STATS]   SLEC process is using 78 MB, peak 346 MB, and 10 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+     [TA-BBCT]    Bit-blasting the clock tree.
+     [UI-STATS]   SLEC process is using 78 MB, peak 346 MB, and 10 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+     [ORC-SPCM]   Started processing of constraints and maps.
+     [TDB-EUS]    Unmapped ports/flops exist. Please refer to the file 'CDesignChecker/calypto/mapping.log' for the complete list of unmapped inputs, outputs and flops.
+     [TDB-TNM]    If unmapped flops exist, explicitly specify flop maps or use the command "create_namemap_rule" to make SLEC infer flop maps based on flop names.
+     [ORC-FPCM]   Finished processing of constraints and maps.
+     [UI-STATS]   SLEC process is using 78 MB, peak 346 MB, and 10 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+     [ORC-PES]    SLEC will invoke verification engines in the following sequence: SBV -> StateCheck -> HII -> HL3. Please see file 'CDesignChecker/calypto/.solver_progress.log' for further details.
+     [ORC-SPR]    Started processing reset.
+<WRN>[SIM-NOX]    Port 'spec.rst' does not support 'x' values and will be set to '0' for reset sequence simulation (see global 'value_on_input_pins_during_reset').
+                  Please try 'help SIM-NOX' for more detailed help.
+<WRN>[SIM-NOX]    Port 'spec.rst' does not support 'x' values and will be set to '0' for reset sequence simulation (see global 'value_on_input_pins_during_reset').
+                  Please try 'help SIM-NOX' for more detailed help.
+<WRN>[SIM-NOX]    Port 'spec.rst' does not support 'x' values and will be set to '0' for reset sequence simulation (see global 'value_on_input_pins_during_reset').
+                  Please try 'help SIM-NOX' for more detailed help.
+     [ORC-FPR]    Finished processing reset. For the list of reset-values, please refer to calypto/reset.log.
+     [UI-STATS]   SLEC process is using 78 MB, peak 346 MB, and 10 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+     [ORC-CSMI]   Found counterexample store /RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/CDesignChecker/calypto/cex_store.
+     [ORC-CSMI]   Found 0 stored counterexamples.
+     [SIM-SSBV]   Started performing simulation-based validation (see 'help sim_based_validation').
+     [SIM-FAM]    Simulation will attempt to find all mismatches within 200 transactions (see 'help sim_finds_only_earliest_mismatches' and 'help sim_max_transactions').
+     [SIM-NMMF]   Simulation did not find any mismatches.
+     [SIM-FSBV]   Finished performing simulation-based validation.
+     [UI-STATS]   SLEC process is using 78 MB, peak 346 MB, and 10 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+     [ORC-SSRAO]  Started performing optimizations.
+     [ORC-FSRAO]  Finished performing optimizations.
+     [UI-STATS]   SLEC process is using 78 MB, peak 346 MB, and 10 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+     [ORC-SCCIV]  Started performing consistency checks in the spec and impl designs.
+     [ORC-FCCIV]  Finished performing consistency checks in the spec and impl designs.
+     [UI-STATS]   SLEC process is using 78 MB, peak 346 MB, and 10 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+     [ORC-UDM]    Starting to unroll the design to obtain outputs and flops for transaction 1.
+     [TDB-STAC]   Starting to apply constraints for sequential analysis.
+     [TDB-DAC]    Finished application of constraints for sequential analysis.
+     [UI-STATS]   SLEC process is using 78 MB, peak 346 MB, and 10 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+     [CDBO-ODU]   Finished performing optimization-enabled design unrolling.
+     [UI-STATS]   SLEC process is using 78 MB, peak 346 MB, and 10 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+     [ORC-UDDM]   Finished unrolling design to obtain outputs and flops for transaction 1.
+     [ORC-SSA]    Started sequential analysis.
+     [UI-STATS]   SLEC process is using 78 MB, peak 346 MB, and 10 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+     [APP-CPGI]   solver_cache_location does not exist. So it will be created.
+     [SOL-SCP]    Solver cache path set to '/RAID2/COURSE/asoc/asoc020/Catapult_1/fir.v1/CDesignChecker/calypto/.solver_cache/'.
+     [SEQ-SSCP]   Starting state checks to classify flops as inductive or non-inductive.
+     [SEQ-NIFTY]  Starting flop relaxation loop.
+     [SEQ-NIFTY]  State checks skipped, SEQ relaxing all flops.
+     [SEQ-NIFTY]  Outlist is empty, no state checks to make.
+     [SEQ-DSCP]   Finished state checks to classify flops as inductive or non-inductive: 1 non-inductive, 0 inductive.
+     [SEQ-NIFTY]  Finished flop relaxation loop.
+     [UI-STATS]   SLEC process is using 78 MB, peak 482 MB, and 10 seconds [+0MB, +136MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+     [SEQ-PO1M]   Started normalizing spec and impl netlists for sequential analysis.
+<WRN>[SEQ-SRFC]   Map application for intermediate/induct maps was sub-optimal for 1 maps. Please look at the .spec_redux.log file in the work directory for more details.
+     [SEQ-SOX]    Started optimizations on normalized netlist.
+     [SEQ-FOX]    Finished optimizations on normalized netlist.
+     [UI-STATS]   SLEC process is using 78 MB, peak 482 MB, and 10 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+     [SEQ-ASD]    Determined 1 to be the acyclic sequential depth of the normalized spec and impl netlists.
+     [SEQ-O1M]    Finished normalizing spec and impl netlists for sequential analysis.
+     [UI-STATS]   SLEC process is using 78 MB, peak 482 MB, and 10 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+     [SEQ-SIIC]   Starting high-effort induct map init checks.
+     [SEQ-NIIPP]  Posing 1 induct map init check problems.
+     [SEQ-SWTWP]  Current Solver Progress : 1 init_check problems proven, 0 falsified, 0 remaining : 5 seconds elapsed.
+     [SEQ-FIIC]   Finished high-effort induct map init checks.
+     [SEQ-OOP]    Overall Progress : 1 induct init check problems proven, 0 falsified, 0 remaining.
+     [UI-STATS]   SLEC process is using 78 MB, peak 482 MB, and 10 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+     [SEQ-TTPS]   Starting sequential analysis (Engine L0).
+     [SEQ-PEBS]   Output-map ('spec.Calypto_transaction_done' latency=1, 'impl.dummy_impl_out' latency=1, valid='impl.cc_const_value_1u_h0_impl ', induct=1) proven equivalent.
+     [SEQ-OOP]    Overall Progress : 1 output problems proven, 0 falsified, 0 remaining.
+     [SEQ-DTPS]   Finished sequential analysis (Engine L0).
+     [ORC-FSA]    Finished sequential analysis.
+     [UI-STATS]   SLEC process is using 78 MB, peak 482 MB, and 10 seconds [+0MB, +0MB, +0s] @ Tue Mar 26 16:54:46 2024
+
+
+No problems were falsified.
+
+
+     [CPT-DCD]    Generating design_checks.db file.
+     [CPT-OLX]    Generating design_checks.xml file.
+     [CPT-OLT]    Generating design check reports.
+     [CPT-DCS]    Summary of Design Checks. 
+==================================================================================== 
+*****************************Status of Property Checks******************************
+==================================================================================== 
+
+
+                                                    Violated   Waived     Undecided     
+==================================================================================== 
+FATAL                                               0          0          0             
+==================================================================================== 
+
+==================================================================================== 
+ERROR                                               0          0          0             
+==================================================================================== 
+
+==================================================================================== 
+WARNING                                             0          0          0             
+==================================================================================== 
+
+==================================================================================== 
+INFO                                                0          0          0             
+==================================================================================== 
+
+==================================================================================== 
+
+14 warning, 0 error messages
+5.247u 0.712s 12.000 0:12.000   77.529m 481.938p
+(SLEC process used 482 MB and 12 seconds)
